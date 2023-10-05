@@ -23,13 +23,9 @@ const Pager = ({ pageCt, buttonCt, initialPage }) => {
     return pg < parseInt(pageCt) ? parseInt(pg) + 1 : pageCt;
   }
 
-  // TO DO:  Set the initial page
-
-  // To do: refactor to generate list based on provided values, rewrite the list OR hide unused numbers based on the current page
+  // TO DO: refactor to generate list based on provided values, update the list when a new page is selected
   return <Panel>
-    {/* TEMP FOR TESTING */}
-    <div>Total Buttons: {buttonCt}, Total Pages:  {pageCt},  Current Page:  {currentPage}</div>
-    <Button text="<" data-pg={prevPage(currentPage)} onClick={setPage} />
+    <Button text="<" data-pg={prevPage(currentPage)} onClick={setPage}/>
     <Button text="1" data-pg="1" active={currentPage === "1"} onClick={setPage} />
     <Button text="2" data-pg="2" active={currentPage === "2"} onClick={setPage} />
     <Button text="..." data-pg="3" active={currentPage === "3"} onClick={setPage} />

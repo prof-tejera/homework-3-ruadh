@@ -26,7 +26,7 @@ const App = () => {
           <Panel>
             Note:  I ran out of time on this one, and did not get to the following:
             <ul>
-              <li>Updating the page numbering in the pager when you page to a number not shown in the initial list (in this case pg. 3-12)</li>
+              <li>Updating which pages appear in the pager when you select a new page</li>
               <li>Refactoring as noted in the comments</li>
               <li>Any custom styling</li>
             </ul>
