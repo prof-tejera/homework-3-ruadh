@@ -12,15 +12,8 @@ const RadioButtons = () => {
 
 
   return <Panel>
-    {/* TO DO:  Iterate over values list, pass an ID */}
 
-    {/* TEMP FOR TESTING */}
-    <div>Apple from state: {JSON.stringify(apple)}</div>
-    <div>Pear from state: {JSON.stringify(pear)}</div>
-    <div>Orange from state: {JSON.stringify(orange)}</div>
-    <hr />
-
-    {/* TO DO:  refactor to handle the toggling more elegantly*/}
+    {/* TO DO:  refactor to handle the toggling more elegantly */}
     <Input type="radio" id="apple" name="grouping" value="apple" label="Apple" checked={apple}
       onChange={(e) => {
         setApple(e.target.checked);

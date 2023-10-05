@@ -3,10 +3,10 @@ import "./Pager.css";
 import Panel from "components/Panel/Panel";
 import Button from "components/Button/Button";
 
-const Pager = ({ pageCt, buttonCt }) => {
+const Pager = ({ pageCt, buttonCt, initialPage }) => {
 
   // Track the current page in state
-  const [currentPage, setCurrentPage] = useState(null);
+  const [currentPage, setCurrentPage] = useState(initialPage);
 
   // Function to update current page in state 
   const setPage = (e) => {
@@ -25,7 +25,7 @@ const Pager = ({ pageCt, buttonCt }) => {
 
   // TO DO:  Set the initial page
 
-  // To do: refactor to generate list based on provided values, rewrite the list based on the current page
+  // To do: refactor to generate list based on provided values, rewrite the list OR hide unused numbers based on the current page
   return <Panel>
     {/* TEMP FOR TESTING */}
     <div>Total Buttons: {buttonCt}, Total Pages:  {pageCt},  Current Page:  {currentPage}</div>

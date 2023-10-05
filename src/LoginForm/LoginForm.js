@@ -12,10 +12,6 @@ const LoginForm = () => {
   const [rememberMe, setRememberMe] = useState(true);
 
   return <Panel>
-    {/* TEMP FOR TESTING */}
-    <div>Username from state: {userName}</div>
-    <div>Password from state: {password}</div>
-    <div>RememberMe from state: {JSON.stringify(rememberMe)}</div>
 
     <Input
       type='text'
