@@ -27,6 +27,7 @@ const App = () => {
             Note:  I ran out of time on this one, and did not get to the following:
             <ul>
               <li>Updating which pages appear in the pager when you select a new page</li>
+              <li>Supporting a user-specified number of buttons in the pager</li>
               <li>Refactoring as noted in the comments</li>
               <li>Any custom styling</li>
             </ul>
@@ -44,7 +45,7 @@ const App = () => {
       <div className="App-component">
         <header className="App-header">Pager component (In Progress)</header>
         <div className="App-content">
-          <Pager buttonCt="6" pageCt="13" initialPage="2" />
+          <Pager pageCt="13" initialPage="2" />
         </div>
       </div>
 

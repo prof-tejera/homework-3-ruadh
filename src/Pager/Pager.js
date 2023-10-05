@@ -3,7 +3,7 @@ import "./Pager.css";
 import Panel from "components/Panel/Panel";
 import Button from "components/Button/Button";
 
-const Pager = ({ pageCt, buttonCt, initialPage }) => {
+const Pager = ({ pageCt, initialPage }) => {
 
   // Track the current page in state
   const [currentPage, setCurrentPage] = useState(initialPage);
@@ -23,7 +23,7 @@ const Pager = ({ pageCt, buttonCt, initialPage }) => {
     return pg < parseInt(pageCt) ? parseInt(pg) + 1 : pageCt;
   }
 
-  // TO DO: refactor to generate list based on provided values, update the list when a new page is selected
+  // TO DO: generate list based on provided values, update the list when a new page is selected
   return <Panel>
     <Button text="<" data-pg={prevPage(currentPage)} onClick={setPage}/>
     <Button text="1" data-pg="1" active={currentPage === "1"} onClick={setPage} />
