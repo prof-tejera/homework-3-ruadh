@@ -11,6 +11,11 @@ const LoginForm = () => {
   const [password, setPassword] = useState(null);
   const [rememberMe, setRememberMe] = useState(true);
 
+  // Placeholder login function
+  const logMeIn = () => {
+    alert(`Logging in as user ${userName} with password ${password} and remember me set to ${rememberMe}`);
+  } 
+
   return <Panel>
 
     <Input
@@ -34,6 +39,7 @@ const LoginForm = () => {
     />
     <Button
       text="Submit"
+      onClick={() => logMeIn()}
     />
 
   </Panel>;
