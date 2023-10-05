@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Pager.css";
 import Panel from "components/Panel/Panel";
 import Button from "components/Button/Button";
