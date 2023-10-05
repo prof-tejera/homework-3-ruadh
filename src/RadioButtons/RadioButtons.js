@@ -4,11 +4,13 @@ import Panel from "components/Panel/Panel";
 
 const RadioButtons = () => {
   return <Panel>
-    {/* TO DO:  Iterate over values list, pass an ID */}
-    <Input type="radio" id="val1" name="grouping" value="val1"/>
-    <label for ="val1">Value 1</label>
-    <Input type="radio" id="val2" name="grouping" value="val2" />
-    <label for="val2">Value 2</label>
+    {/* TO DO:  Iterate over values list, pass an ID, put the labels in the Input component */}
+    <Input type="radio" id="apple" name="grouping" value="apple"/>
+    <label for ="apple">Apple</label>
+    <Input type="radio" id="pear" name="grouping" value="pear" />
+    <label for="pear">Pear</label>
+    <Input type="radio" id="orange" name="grouping" value="orange" />
+    <label for="orange">Orange</label>
   </Panel>;
 };
 
