@@ -18,21 +18,21 @@ const App = () => {
       </div>
 
       <div className="App-component">
-        <header className="App-header">Login form component (TODO)</header>
+        <header className="App-header">Login form component (Done except for styling)</header>
         <div className="App-content">
           <LoginForm />
         </div>
       </div>
 
       <div className="App-component">
-        <header className="App-header">Pager component (TODO)</header>
+        <header className="App-header">Pager component (In Progress)</header>
         <div className="App-content">
-          <Pager />
+          <Pager buttonCt="6" pageCt="13" />
         </div>
       </div>
 
       <div className="App-component">
-        <header className="App-header">Radio Buttons component (TODO)</header>
+        <header className="App-header">Radio Buttons component (Done except for styling)</header>
         <div className="App-content">
           <RadioButtons />
         </div>
